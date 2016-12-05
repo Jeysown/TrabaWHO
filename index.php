@@ -6,11 +6,11 @@ header('Content-Disposition: attachment; filename=data.csv');
 $output = fopen('php://output', 'w');
 
 // output the column headings
-fputcsv($output, array('ID','Name'));
+fputcsv($output, array('Name','Age','R','I','A','S','E','C'));
 
 // fetch the data
 $con = mysqli_connect('localhost', 'root', '','csv');
-$rows = mysqli_query($con,'SELECT * FROM tb');
+$rows = mysqli_query($con,'SELECT name,age,r,i,a,s,e,c FROM tb');
 
 // loop over the rows, outputting them
 while ($row = mysqli_fetch_assoc($rows)) fputcsv($output, $row);
