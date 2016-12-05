@@ -2,22 +2,19 @@
 html,body,#page, header { height:100%;}
 body{
   padding:0;margin:0;
-  font-family: "Minion Pro";
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .marketing .col-lg-6 {
   margin-bottom: 20px;
   text-align: left;
 }
-.marketing h2 {
-  font-weight: normal;
-}
 .marketing .col-lg-6 p {
   margin-left: 10px;
 }
 
 .navbar-custom {
-  background-color: #333399;
+  background-color: #054664;
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
@@ -34,8 +31,8 @@ body{
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
-  background-color: #3366CC;
-  border-color:  #3366CC;
+  background-color: #0b6087;
+  border-color:  #0b6087;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
@@ -43,7 +40,7 @@ body{
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #3366CC;
+  background-color: #0b6087;
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -54,18 +51,18 @@ body{
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #3366CC;
+  color: #0b6087;
   outline: none;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #3366CC;
+  background-color: #0b6087;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #3366CC;
+  background-color: #0b6087;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -88,20 +85,20 @@ body{
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color:  #333399;
+    background-color:  #054664;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
   }
 }
-section {
-  padding: 20px 0;
-}
+
 section h2.section-heading {
-  font-size: 60px;
+  font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
+  color:#0b6087;
+  font-weight: bold;
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -110,4 +107,53 @@ section h3.section-subheading {
   font-style: italic;
   font-weight: 400;
   margin-bottom: 75px;
+}
+.gray-bg{
+  padding-top: 20px;
+  background-color: #eee;
+  padding-bottom: 20px;
+}
+.team-member{
+  text-align: center;
+}
+
+
+ul.social-buttons li a {
+  display: block;
+  background-color: #0b6087;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 50px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-bottom: 20px;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #054664;
+}
+.img-circle{
+  width:65%;
+}
+.team-member img{
+  margin: 0 auto;
+border: 7px solid #fff;
+}
+.result-title{
+  margin-bottom:0px;
+  margin-top:20px;
+  font-weight:bold;
+  font-size:30px;
+  color:#0b6087;
+}
+footer{
+  background-color: #054664;
+  height: 80px;
+  color:#fff;
 }
