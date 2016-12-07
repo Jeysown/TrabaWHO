@@ -45,7 +45,7 @@
           </div>
       </div>
   </nav>
-  <div class="" style="background-color:#0b6087;height:700px;">
+  <div class="" style="background:url('assets/images/bg.jpg');height:700px;background-attachment:fixed;">
 
   </div>
   <!-- about -->
@@ -400,19 +400,70 @@
     </div>
         </div>
   </section>
+  <section id="contact">
+    <div style="padding-bottom:20px;">
+
+
+    <div class="container marketing" style="padding-top:50px;">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Contact Us</h2>
+        <h3 class="section-subheading text-muted" style="margin-bottom:40px;">Feel Free to Contact Us Anytime!</h3>
+        </div>
+        </div>
+        </div>
+        <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-6">
+            <div class="col-lg-12">
+                  <h2>Contact Info:</h2>
+                  <hr class="divider2">
+                  <i class="fa fa-map-marker contact-logo" ></i><p>&emsp;<b>Complete Address:</b><br>&emsp;P. Casal, Quiapo, Manila, Metro Manila</p>
+                  <hr class="divider2">
+            </div>
+            <div class="col-lg-6">
+              <i class="fa fa-phone contact-logo" ></i><p>&emsp;<b>Phone Number:</b><br>&emsp;+63-905-924-2742</p>
+            </div>
+            <div class="col-lg-6">
+              <i class="fa fa-facebook contact-logo" ></i><p>&emsp;<b>Facebook Account:</b><br>&emsp;facebook.com/TrabaWHO</p>
+            </div>
+            <hr class="divider2">
+            <div class="col-lg-6">
+              <i class="fa fa-google contact-logo" ></i><p>&emsp;<b>Gmail Account:</b><br>&emsp;MSG_Trabawho@gmail.com</p>
+            </div>
+            <div class="col-lg-6">
+              <i class="fa fa-twitter contact-logo" ></i><p>&emsp;<b>Twitter Account:</b><br>&emsp;twitter.com/TrabaWHO</p>
+            </div>
+            <hr class="divider2">
+
+            </div>
+            <div class="col-lg-6">
+                  <h2>Location on Map:</h2>
+                  <iframe src="//www.google.com/maps/embed/v1/place?q=Technological%20Institute%20of%20the%20Philippines&zoom=17 &key=AIzaSyBVPZIWcBs6SVr5uECLmrhe8c-9DD8dGe0" style="height:280px;width:100%;border:none;"></iframe>
+            </div>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+</section>
   <footer>
     <div class="container">
       <div class="row">
 
-    <div class="col-xs-12" style="padding:20px;">
-      <div class="col-sm-6 col-xs-6" style="text-align:left;font-style:italic;padding:0px;">
-        All Rights Reserved Copyright © 2016
-      </div>
-      <div class="col-sm-6 col-xs-6" style="text-align:right;padding:0px;">
-        A Product by NiceSwan!
-      </div>
-    </div>
+        <div class="col-xs-12" style="padding:20px;">
+          <div class="col-sm-6 col-xs-6" style="text-align:left;font-style:italic;padding:0px;">
+            All Rights Reserved Copyright © 2016
           </div>
+          <div class="col-sm-6 col-xs-6" style="text-align:right;padding:0px;">
+            A Product by NiceSwan!
+          </div>
+        </div>
+      </div>
+
         </div>
   </footer>
   </body>

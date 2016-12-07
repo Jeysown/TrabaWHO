@@ -171,7 +171,14 @@ footer{
   width: 70%; color: #777; height: 1px; background-color:#777;
   opacity: .3;
 }
+.divider2{
+  width: 100%; color: #777; height: 1px; background-color:#777;
+  opacity: .3;
+}
 .check{
   color:#0b6087;
   font-size: 20px;
+}
+.contact-logo{
+  font-weight:bold;font-size:40px;color:#0b6087;float:left;
 }
