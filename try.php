@@ -144,6 +144,7 @@
             <li>Actor</li>
             <li>Disk Jockey</li>
             <li>Composer</li>
+            <li>Musician</li>
           </ul>
           </div>
         </div>
