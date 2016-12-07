@@ -2,11 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-      <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title">
+
   </head>
   <body id="page-top">
     <!-- Navigation -->
@@ -27,11 +29,12 @@
                       <a href="#page-top"></a>
                   </li>
                   <li>
-                      <a class="page-scroll" href="#result">Result</a>
-                  </li>
-                  <li>
                       <a class="page-scroll" href="#about">About</a>
                   </li>
+                  <li>
+                      <a class="page-scroll" href="#result">Result</a>
+                  </li>
+
                   <li>
                       <a class="page-scroll" href="#team">Team</a>
                   </li>
@@ -42,11 +45,51 @@
           </div>
       </div>
   </nav>
-  <div class="" style="background-color:black;height:700px;">
+  <div class="" style="background-color:#0b6087;height:700px;">
 
   </div>
+  <!-- about -->
+  <section id="about">
+    <div class="gray-bg">
+    <div class="container marketing" style="padding-top:20px;">
+      <div class="row">
+        <div class="col-lg-12 text-center" >
+          <h2 class="section-heading">About the App</h2>
+          <h3 class="section-subheading text-muted about" style="margin-bottom:40px;">It’s all about helping them in finding the best opportunity. It’s all about helping them to determine the path that they should take. It’s all about helping.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-12" style="padding-bottom:20px;padding-left:10px;">
+
+          <div class="col-lg-7">
+          <center><img src="assets/images/cellphone.png" alt="" height="430" width="70%"></center>
+          </div>
+          <div class="col-lg-4">
+            <h2 style="font-weight:bold;color:#0b6087">TrabaWHO</h2>
+            <h4 style="font-weight:bold;padding-bottom:20px;">An App to Determine Your Career.</h4>
+            <h5 style="padding-bottom:10px;" class="text-muted">Don't you know your career yet? We have a <u style="color:#0b6087;font-weight:bold;">solution</u> for you. With TrabaWHO you can determine the best career that will fit your skills, knowledge, and personality. <b style="color:#222;">Give it a try, it's free!</b></h5>
+            <p class="text-muted"><i class="fa fa-check check" aria-hidden="true"></i>&nbsp;&nbsp;Accurate results.</p>
+            <p class="text-muted"><i class="fa fa-check check" aria-hidden="true"></i>&nbsp;&nbsp;Provides appealing image questionnaires.</p>
+            <p class="text-muted"><i class="fa fa-check check" aria-hidden="true"></i>&nbsp;&nbsp;Guide everyone with their future career.</p>
+            <p class="text-muted"><i class="fa fa-check check" aria-hidden="true"></i>&nbsp;&nbsp;Discover your potential and aptitude.</p>
+            <p class="text-muted"><i class="fa fa-check check" aria-hidden="true"></i>&nbsp;&nbsp;Minimize manual system in career advising.</p>
+            <img src="assets/images/google.png" alt="" width="60%">
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- about -->
   <!-- results -->
   <section id="result">
+    <div>
+
+
     <div class="container marketing" style="padding-top:50px;">
       <div class="row">
     <div class="col-lg-12 text-center">
@@ -60,7 +103,7 @@
         <!-- left -->
         <div class="col-lg-12">
           <div class="col-lg-6">
-          <center><img class="img-square" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="90%" height="220">
+          <center><img class="img-square" src="images/7.jpg"  width="90%" height="240">
           <h2 class="result-title">Realistic</h2>
           <p>These people are often good at mechanical or athletic jobs.</p></center>
           </div>
@@ -125,7 +168,7 @@
           </div>
         </div>
           <div class="col-lg-6">
-          <center><img class="img-square" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="90%" height="220">
+          <center><img class="img-square" src="images/26.jpg"  width="90%" height="240">
           <h2 class="result-title">Investigative</h2>
           <p>These people like to watch, learn, analyze and solve problems.  </p></center>
           </div>
@@ -136,7 +179,7 @@
         <!-- left -->
         <div class="col-lg-12">
           <div class="col-lg-6">
-          <center><img class="img-square" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="90%" height="220">
+          <center><img class="img-square" src="images/23.jpg"  width="90%" height="240">
           <h2 class="result-title">Artistic</h2>
           <p>These people like to work in unstructured situations where they can use their creativity.</p></center>
           </div>
@@ -203,7 +246,7 @@
           </div>
         </div>
           <div class="col-lg-6">
-          <center><img class="img-square" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="90%" height="220">
+          <center><img class="img-square" src="images/12.jpg"  width="90%" height="240">
           <h2 class="result-title">Social</h2>
           <p>These people like to work with other people, rather than things.  </p></center>
           </div>
@@ -214,7 +257,7 @@
         <!-- left -->
         <div class="col-lg-12">
           <div class="col-lg-6">
-          <center><img class="img-square" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="90%" height="220">
+          <center><img class="img-square" src="images/29.jpg"  width="90%" height="240">
           <h2 class="result-title">Enterprising</h2>
           <p>These people like to work with others and enjoy persuading and and performing.  </p></center>
           </div>
@@ -278,7 +321,7 @@
           </div>
         </div>
           <div class="col-lg-6">
-          <center><img class="img-square" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="90%" height="220">
+          <center><img class="img-square" src="images/38.jpg"  width="90%" height="240">
           <h2 class="result-title">Conventional</h2>
           <p>These people are very detail oriented,organized and like to work with data.</p></center>
           </div>
@@ -289,7 +332,7 @@
       </div>
     </div>
   </section>
-
+</div>
   <!-- results -->
   <!-- about -->
   <section id="team">
