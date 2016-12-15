@@ -2,7 +2,7 @@ function createColumnChart() {
 
   var chart = new CanvasJS.Chart("chartContainer", {
     title: {
-      text: "Basic Column Chart"
+      text: "Overall Result"
     },
     axisY:{
           interval: 5,
