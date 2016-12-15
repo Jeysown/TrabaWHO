@@ -185,3 +185,24 @@ footer{
 .canvasjs-chart-credit{
   font-size: 250px;
 }
+.result-border{
+  border:5px solid rgba(11, 96, 135,.8);
+  padding:10px;
+  margin-bottom: 10px;
+
+}
+.title-result{
+  text-align:center;
+  font-weight: bolder;
+  color:rgb(11, 96, 135);
+  font-size:27px;
+
+}
+.result{
+  padding-left:150px;
+}
+@media(max-width:520px){
+  .result{
+    padding-left: 0px;
+  }
+}

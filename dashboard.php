@@ -32,7 +32,7 @@
                       <a class="page-scroll" href="#about">About</a>
                   </li>
                   <li>
-                      <a class="page-scroll" href="#result">Result</a>
+                      <a class="page-scroll" href="#interpretation">Interpretation</a>
                   </li>
 
                   <li>
@@ -41,7 +41,10 @@
                   <li>
                       <a class="page-scroll" href="#contact">Contact</a>
                   </li>
-              </ul>
+                  <li>
+                      <a class="page-scroll" href="result.php#result">Result</a>
+                  </li>
+                              </ul>
           </div>
       </div>
   </nav>
@@ -86,7 +89,7 @@
   </section>
   <!-- about -->
   <!-- results -->
-  <section id="result">
+  <section id="interpretation">
     <div>
 
 

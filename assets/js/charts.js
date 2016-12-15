@@ -1,9 +1,7 @@
 function createColumnChart() {
 
   var chart = new CanvasJS.Chart("chartContainer", {
-    title: {
-      text: "Overall Result"
-    },
+    animationEnabled: true,
     axisY:{
           interval: 5,
         },
@@ -24,21 +22,17 @@ function createColumnChart() {
 
   var piechart = new CanvasJS.Chart("piechart",
   {
-    theme: "theme2",
-    title:{
-      text: "Course Match"
-    },
+    animationEnabled: true,
     data: [
     {
       type: "pie",
       showInLegend: true,
       toolTipContent: "{y} - #percent %",
-      yValueFormatString: "#0.#,,. Million",
       legendText: "{indexLabel}",
       dataPoints: [
-        {  y: 4181563, indexLabel: "PlayStation 3" },
-        {  y: 2175498, indexLabel: "Wii" },
-        {  y: 3125844, indexLabel: "Xbox 360" }
+        {  y: 200, indexLabel: "Match" },
+        {  y: 100, indexLabel: "Not match" },
+        {  y: 100, indexLabel: "Undecided" }
       ]
     }
     ]
@@ -46,17 +40,13 @@ function createColumnChart() {
   piechart.render();
 
   var splineArea = new CanvasJS.Chart("splineArea", {
-    title: {
-      text: "School"
-    },
     animationEnabled: true,
     axisY: {
       includeZero: false,
-      prefix: "$ "
     },
     toolTip: {
       shared: true,
-      content: "<span style='\"'color: {color};'\"'><strong>{name}</strong></span> <span style='\"'color: dimgrey;'\"'>${y}</span> "
+      content: "<span style='\"'color: {color};'\"'><strong>{name}</strong></span> <span style='\"'color: dimgrey;'\"'>{y}</span> "
     },
     legend: {
       fontSize: 13
@@ -65,63 +55,30 @@ function createColumnChart() {
     {
       type: "splineArea",
       showInLegend: true,
-      name: "Salaries",
+      name: "T.I.P",
       color: "rgba(54,158,173,.6)",
       dataPoints: [
-      { x: new Date(2012, 2), y: 30000 },
-      { x: new Date(2012, 3), y: 35000 },
-      { x: new Date(2012, 4), y: 30000 },
-      { x: new Date(2012, 5), y: 30400 },
-      { x: new Date(2012, 6), y: 20900 },
-      { x: new Date(2012, 7), y: 31000 },
-      { x: new Date(2012, 8), y: 30200 },
-      { x: new Date(2012, 9), y: 30000 },
-      { x: new Date(2012, 10), y: 33000 },
-      { x: new Date(2012, 11), y: 38000 },
-      { x: new Date(2013, 0), y: 38900 },
-      { x: new Date(2013, 1), y: 39000 }
+        { y: res[0], label: "R" },
+        { y: res[1], label: "I" },
+        { y: res[2], label: "A" },
+        { y: res[3], label: "S" },
+        { y: res[4], label: "E" },
+        { y: res[5], label: "C" }
 
       ]
     },
     {
       type: "splineArea",
       showInLegend: true,
-      name: "Office Cost",
+      name: "U.S.T.",
       color: "rgba(134,180,2,.7)",
       dataPoints: [
-      { x: new Date(2012, 2), y: 20100 },
-      { x: new Date(2012, 3), y: 16000 },
-      { x: new Date(2012, 4), y: 14000 },
-      { x: new Date(2012, 5), y: 18000 },
-      { x: new Date(2012, 6), y: 18000 },
-      { x: new Date(2012, 7), y: 21000 },
-      { x: new Date(2012, 8), y: 22000 },
-      { x: new Date(2012, 9), y: 25000 },
-      { x: new Date(2012, 10), y: 23000 },
-      { x: new Date(2012, 11), y: 25000 },
-      { x: new Date(2013, 0), y: 26000 },
-      { x: new Date(2013, 1), y: 25000 }
-
-      ]
-    },
-    {
-      type: "splineArea",
-      showInLegend: true,
-      name: "Entertainment",
-      color: "rgba(194,70,66,.6)",
-      dataPoints: [
-      { x: new Date(2012, 2), y: 10100 },
-      { x: new Date(2012, 3), y: 6000 },
-      { x: new Date(2012, 4), y: 3400 },
-      { x: new Date(2012, 5), y: 4000 },
-      { x: new Date(2012, 6), y: 9000 },
-      { x: new Date(2012, 7), y: 3900 },
-      { x: new Date(2012, 8), y: 4200 },
-      { x: new Date(2012, 9), y: 5000 },
-      { x: new Date(2012, 10), y: 14300 },
-      { x: new Date(2012, 11), y: 12300 },
-      { x: new Date(2013, 0), y: 8300 },
-      { x: new Date(2013, 1), y: 6300 }
+        { y: 23, label: "R" },
+        { y: 44, label: "I" },
+        { y: 6, label: "A" },
+        { y: 19, label: "S" },
+        { y: 28, label: "E" },
+        { y: 11, label: "C" }
 
       ]
     },
@@ -129,42 +86,29 @@ function createColumnChart() {
       type: "splineArea",
       showInLegend: true,
       color: "rgba(127,96,132,.6)",
-      name: "Maintenance",
+      name: "D.L.S.U.",
       dataPoints: [
-      { x: new Date(2012, 2), y: 1700 },
-      { x: new Date(2012, 3), y: 2600 },
-      { x: new Date(2012, 4), y: 1000 },
-      { x: new Date(2012, 5), y: 1400 },
-      { x: new Date(2012, 6), y: 900 },
-      { x: new Date(2012, 7), y: 1000 },
-      { x: new Date(2012, 8), y: 1200 },
-      { x: new Date(2012, 9), y: 5000 },
-      { x: new Date(2012, 10), y: 1300 },
-      { x: new Date(2012, 11), y: 2300 },
-      { x: new Date(2013, 0), y: 2800 },
-      { x: new Date(2013, 1), y: 1300 }
+        { y: 22, label: "R" },
+        { y: 21, label: "I" },
+        { y: 43, label: "A" },
+        { y: 10, label: "S" },
+        { y: 12, label: "E" },
+        { y: 22, label: "C" }
 
       ]
     },
     {
-      type: "spline",
+      type: "splineArea",
       showInLegend: true,
       color: "rgba(127,96,255,.6)",
-      name: "Average",
+      name: "F.E.U.",
       dataPoints: [
-      { x: new Date(2012, 2), y: 15475 },
-      { x: new Date(2012, 3), y: 14900 },
-      { x: new Date(2012, 4), y: 12100 },
-      { x: new Date(2012, 5), y: 13450 },
-      { x: new Date(2012, 6), y: 12200 },
-      { x: new Date(2012, 7), y: 14225 },
-      { x: new Date(2012, 8), y: 14400 },
-      { x: new Date(2012, 9), y: 16250 },
-      { x: new Date(2012, 10), y: 17900 },
-      { x: new Date(2012, 11), y: 19400 },
-      { x: new Date(2013, 0), y: 19000 },
-      { x: new Date(2013, 1), y: 17900 }
-
+        { y: 23, label: "R" },
+        { y: 43, label: "I" },
+        { y: 12, label: "A" },
+        { y: 51, label: "S" },
+        { y: 22, label: "E" },
+        { y: 24, label: "C" }
       ]
     }
 
@@ -173,10 +117,7 @@ function createColumnChart() {
 
   splineArea.render();
   var stackedArea = new CanvasJS.Chart("stackedArea", {
-    title: {
-      text: "Location",
-      margin: 15
-    },
+    animationEnabled: true,
     toolTip: {
       shared: true
     },
@@ -185,10 +126,7 @@ function createColumnChart() {
       interval: 1,
       intervalType: "month"
     },
-    axisY: {
-      maximum: 3100,
-      interval: 1000
-    },
+
 
     legend: {
       verticalAlign: "bottom",
@@ -197,96 +135,63 @@ function createColumnChart() {
     data: [
     {
       type: "stackedArea",
-      name: "cars",
-      showInLegend: "true",
+      showInLegend: true,
+      name: "Makati",
+      color: "rgba(54,158,173,.6)",
       dataPoints: [
-      { x: new Date(2012, 00, 1), y: 1100 },
-      { x: new Date(2012, 01, 1), y: 1200 },
-      { x: new Date(2012, 02, 1), y: 1000 },
-      { x: new Date(2012, 03, 1), y: 1200 },
-      { x: new Date(2012, 04, 1), y: 1600 },
-      { x: new Date(2012, 05, 1), y: 1800 },
-      { x: new Date(2012, 06, 1), y: 1400 },
-      { x: new Date(2012, 07, 1), y: 1500 },
-      { x: new Date(2012, 08, 1), y: 1600 },
-      { x: new Date(2012, 09, 1), y: 1800 }
+        { y: res[0], label: "R" },
+        { y: res[1], label: "I" },
+        { y: res[2], label: "A" },
+        { y: res[3], label: "S" },
+        { y: res[4], label: "E" },
+        { y: res[5], label: "C" }
 
       ]
     },
     {
       type: "stackedArea",
-      name: "trucks",
-      showInLegend: "true",
+      showInLegend: true,
+      name: "Quezon",
+      color: "rgba(134,180,2,.7)",
       dataPoints: [
-      { x: new Date(2012, 00, 1), y: 150 },
-      { x: new Date(2012, 01, 1), y: 171 },
-      { x: new Date(2012, 02, 1), y: 155 },
-      { x: new Date(2012, 03, 1), y: 150 },
-      { x: new Date(2012, 04, 1), y: 165 },
-      { x: new Date(2012, 05, 1), y: 195 },
-      { x: new Date(2012, 06, 1), y: 155 },
-      { x: new Date(2012, 07, 1), y: 145 },
-      { x: new Date(2012, 08, 1), y: 140 },
-      { x: new Date(2012, 09, 1), y: 151 }
+        { y: 23, label: "R" },
+        { y: 44, label: "I" },
+        { y: 6, label: "A" },
+        { y: 19, label: "S" },
+        { y: 28, label: "E" },
+        { y: 11, label: "C" }
 
       ]
     },
     {
       type: "stackedArea",
-      name: "bicycles",
-      showInLegend: "true",
+      showInLegend: true,
+      color: "rgba(127,96,132,.6)",
+      name: "Laguna",
       dataPoints: [
-      { x: new Date(2012, 00, 1), y: 71 },
-      { x: new Date(2012, 01, 1), y: 41 },
-      { x: new Date(2012, 02, 1), y: 55 },
-      { x: new Date(2012, 03, 1), y: 50 },
-      { x: new Date(2012, 04, 1), y: 65 },
-      { x: new Date(2012, 05, 1), y: 95 },
-      { x: new Date(2012, 06, 1), y: 45 },
-      { x: new Date(2012, 07, 1), y: 95 },
-      { x: new Date(2012, 08, 1), y: 60 },
-      { x: new Date(2012, 09, 1), y: 40 }
-
-      ]
-    },
-
-    {
-      type: "stackedArea",
-      name: "motorcycles",
-      showInLegend: "true",
-      dataPoints: [
-      { x: new Date(2012, 00, 1), y: 861 },
-      { x: new Date(2012, 01, 1), y: 761 },
-      { x: new Date(2012, 02, 1), y: 775 },
-      { x: new Date(2012, 03, 1), y: 680 },
-      { x: new Date(2012, 04, 1), y: 785 },
-      { x: new Date(2012, 05, 1), y: 374 },
-      { x: new Date(2012, 06, 1), y: 365 },
-      { x: new Date(2012, 07, 1), y: 455 },
-      { x: new Date(2012, 08, 1), y: 657 },
-      { x: new Date(2012, 09, 1), y: 659 }
+        { y: 22, label: "R" },
+        { y: 21, label: "I" },
+        { y: 43, label: "A" },
+        { y: 10, label: "S" },
+        { y: 12, label: "E" },
+        { y: 22, label: "C" }
 
       ]
     },
     {
       type: "stackedArea",
-      name: "pedistrians",
-      showInLegend: "true",
+      showInLegend: true,
+      color: "rgba(127,96,255,.6)",
+      name: "Pangasinan",
       dataPoints: [
-      { x: new Date(2012, 00, 1), y: 220 },
-      { x: new Date(2012, 01, 1), y: 240 },
-      { x: new Date(2012, 02, 1), y: 295 },
-      { x: new Date(2012, 03, 1), y: 300 },
-      { x: new Date(2012, 04, 1), y: 265 },
-      { x: new Date(2012, 05, 1), y: 235 },
-      { x: new Date(2012, 06, 1), y: 245 },
-      { x: new Date(2012, 07, 1), y: 255 },
-      { x: new Date(2012, 08, 1), y: 275 },
-      { x: new Date(2012, 09, 1), y: 290 }
-
+        { y: 23, label: "R" },
+        { y: 43, label: "I" },
+        { y: 12, label: "A" },
+        { y: 51, label: "S" },
+        { y: 22, label: "E" },
+        { y: 24, label: "C" }
       ]
     }
-
     ]
   });
 
