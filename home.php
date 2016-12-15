@@ -17,8 +17,8 @@
 			$query = "SELECT name,age,r,i,a,s,e,c FROM tb";
 			$result = mysqli_query($con,$query);?>
 
-		<div>
-				<div class="col-lg-8">
+		<div style="padding:20px;">
+				<div class="col-lg-7">
 					<table class="table table-bordered">
 						<thead>
 							<tr>
@@ -50,9 +50,20 @@
 				?>
 					</table>
 				</div>
+				<div class="col-lg-5">
+					<div id="piechart" style="height: 400px; width: 100%;"></div>
+				</div>
+				<div class="col-lg-6">
+					<div id="splineArea" style="height: 400px; width: 100%;">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div id="stackedArea" style="height: 400px; width: 100%;">
+					</div>
+				</div>
 				<div class="col-lg-12">
 					<?php $results = array(10,20,30,40,50,60);?>
-				  <div id="chartContainer" style="width:80%;"></div>
+				  <center><div id="chartContainer" style="width:80%;"></div></center>
 				</div>
 		</div>
 			<!-- <br><a href="http://localhost:8080/TrabaWHO" target="_blank">Download</a> -->

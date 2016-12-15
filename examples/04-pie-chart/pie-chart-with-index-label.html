@@ -3,7 +3,7 @@
 <head>
 	<script type="text/javascript">
 window.onload = function () {
-	var chart = new CanvasJS.Chart("chartContainer",
+	var chart = new CanvasJS.Chart("piechart",
 	{
 		theme: "theme2",
 		title:{
@@ -31,10 +31,10 @@ window.onload = function () {
 	chart.render();
 }
 	</script>
-	<script src="../../canvasjs.min.js"></script>
-	<title>CanvasJS Example</title>
+	<script src="assets/js/canvasjs.min.js"></script>
+	<script src="assets/js/charts.js"></script>
 </head>
 <body>
-	<div id="chartContainer" style="height: 400px; width: 100%;"></div>
+	<div id="piechart" style="height: 400px; width: 100%;"></div>
 </body>
 </html>
