@@ -1,3 +1,4 @@
+<?php include 'fetchEverything.php';?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -109,12 +110,26 @@
 				<div class="col-lg-4" >
 					<div class="result-border">
 						<p class="title-result">Match Course</p>
+            <select onchange="changeTrack()">
+              <option value="allTrack">All Track</option>
+              <option value="abm">ABM</option>
+              <option value="humms">HUMMS</option>
+              <option value="stem">STEM</option>
+              <option value="genA">General Academic</option>
+            </select>
 					<div id="piechart" style="height: 400px; width: 100%;"></div>
 					</div>
 				</div>
 				<div class="col-lg-6" >
 					<div class="result-border">
 						<p class="title-result">School</p>
+            <select onchange="changeSchool()">
+              <option value="allTrack">All Places</option>
+              <option value="abm">ABM</option>
+              <option value="humms">HUMMS</option>
+              <option value="stem">STEM</option>
+              <option value="genA">General Academic</option>
+            </select>
 					<div id="splineArea" style="height: 400px; width: 100%;">
 					</div>
 					</div>
@@ -126,7 +141,6 @@
 					</div>
 					</div>
 				</div>
-									<?php $results = array(10,20,30,40,50,60);?>
 				<div class="col-lg-12" >
 					<div class="result-border">
 						<p class="title-result">Overall Result</p>
@@ -162,6 +176,33 @@
       <script src="assets/js/ease.js"></script>
 			<script src="assets/js/canvasjs.min.js"></script>
 		  <script src="assets/js/charts.js"></script>
+      <script src="assets/js/functions.js"></script>
+      <script type="text/javascript">
+
+      var riasecSchool = [
+      [10,20,30,40,50,60],
+      [23,44,6,19,28,11],
+      [22,21,43,10,12,22],
+      [23,43,12,51,22,24]
+      ];
+      var riasecPlaces = [
+      [10,20,30,40,50,60],
+      [23,44,6,19,28,11],
+      [22,21,43,10,12,22],
+      [23,43,12,51,22,24]
+      ];
+      </script>
 	<script type="text/javascript">
-	  var res=<?php echo json_encode( $results ) ?>;
+	  var overAllRes=<?php echo json_encode( $results)?>;
+    var schools = <?php echo json_encode( $top_4schools)?>;
+    var places = <?php echo json_encode( $top_4places)?>;
+//     var varname={};
+//
+// for (var k = 0; k < result.rows.length; k++) {
+//    varname[k] =
+//    {
+//      'id': result.rows.item(k).id,
+//      'name': result.rows.item(k).name
+//    };
+// }
 	</script>
