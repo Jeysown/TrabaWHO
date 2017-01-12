@@ -137,6 +137,13 @@
 				<div class="col-lg-6" >
 					<div class="result-border">
 						<p class="title-result">Location</p>
+            <select onchange="changeLocation()">
+              <option value="allTrack">All Location</option>
+              <option value="abm">ABM</option>
+              <option value="humms">HUMMS</option>
+              <option value="stem">STEM</option>
+              <option value="genA">General Academic</option>
+            </select>
 					<div id="stackedArea" style="height: 400px; width: 100%;">
 					</div>
 					</div>
@@ -144,6 +151,13 @@
 				<div class="col-lg-12" >
 					<div class="result-border">
 						<p class="title-result">Overall Result</p>
+            <select onchange="changeOverAllTrack()">
+              <option value="allTrack">OverAll Track</option>
+              <option value="abm">ABM</option>
+              <option value="humms">HUMMS</option>
+              <option value="stem">STEM</option>
+              <option value="genA">General Academic</option>
+            </select>
 				  <center><div id="chartContainer" style="width:90%;height:400px;"></div></center>
 					</div>
 				</div>
