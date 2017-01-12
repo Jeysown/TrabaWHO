@@ -106,7 +106,7 @@
         <!-- left -->
         <div class="col-lg-12">
           <div class="col-lg-6">
-          <center><img class="img-square" src="images/7.jpg"  width="90%" height="240">
+          <center><img class="img-square" src="images/r7.jpg"  width="90%" height="240">
           <h2 class="result-title">Realistic</h2>
           <p>These people are often good at mechanical or athletic jobs.</p></center>
           </div>
@@ -171,7 +171,7 @@
           </div>
         </div>
           <div class="col-lg-6">
-          <center><img class="img-square" src="images/26.jpg"  width="90%" height="240">
+          <center><img class="img-square" src="images/i26.jpg"  width="90%" height="240">
           <h2 class="result-title">Investigative</h2>
           <p>These people like to watch, learn, analyze and solve problems.  </p></center>
           </div>
@@ -182,7 +182,7 @@
         <!-- left -->
         <div class="col-lg-12">
           <div class="col-lg-6">
-          <center><img class="img-square" src="images/23.jpg"  width="90%" height="240">
+          <center><img class="img-square" src="images/a23.jpg"  width="90%" height="240">
           <h2 class="result-title">Artistic</h2>
           <p>These people like to work in unstructured situations where they can use their creativity.</p></center>
           </div>
@@ -249,7 +249,7 @@
           </div>
         </div>
           <div class="col-lg-6">
-          <center><img class="img-square" src="images/12.jpg"  width="90%" height="240">
+          <center><img class="img-square" src="images/s12.jpg"  width="90%" height="240">
           <h2 class="result-title">Social</h2>
           <p>These people like to work with other people, rather than things.  </p></center>
           </div>
@@ -260,7 +260,7 @@
         <!-- left -->
         <div class="col-lg-12">
           <div class="col-lg-6">
-          <center><img class="img-square" src="images/29.jpg"  width="90%" height="240">
+          <center><img class="img-square" src="images/e29.jpg"  width="90%" height="240">
           <h2 class="result-title">Enterprising</h2>
           <p>These people like to work with others and enjoy persuading and and performing.  </p></center>
           </div>
@@ -324,7 +324,7 @@
           </div>
         </div>
           <div class="col-lg-6">
-          <center><img class="img-square" src="images/38.jpg"  width="90%" height="240">
+          <center><img class="img-square" src="images/c38.jpg"  width="90%" height="240">
           <h2 class="result-title">Conventional</h2>
           <p>These people are very detail oriented,organized and like to work with data.</p></center>
           </div>
